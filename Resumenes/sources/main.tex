@@ -1,0 +1,23 @@
+% !TEX outputDirectory = ./Build/
+\documentclass{report}
+\setcounter{tocdepth}{4}
+\usepackage[spanish]{babel} %Agrega soporte para el español (ñ, tildes, etc)
+\usepackage{hyperref} %Linkea las referencias
+\usepackage{bookmark}
+\usepackage{nameref}
+\usepackage{color}
+
+\begin{document}
+
+\tableofcontents{}
+\pagebreak
+
+\include{Asimilacion}
+
+\include{Electrificacion}
+
+\include{Observaciones}
+
+\include{Varios}
+
+\end{document}

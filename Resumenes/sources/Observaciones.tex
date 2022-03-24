@@ -1,0 +1,72 @@
+% !TEX root = ./main.tex
+% !TEX outputDirectory = ./Build/
+
+\chapter{Observaciones}
+
+\section{General}
+
+\paragraph{Cummins 2009} \label{Cummins 2009}
+\textbf{An Overview of Lightning Locating Systems: History, Techniques, and Data Uses, With an In-Depth Look at the U.S. NLDN}
+
+Las primeras mediciones de el campo magnético generado por la actividad eléctrica fue hecho en 1985. En 1920 se empezaron a hacer estudios sobre los patrones de los campos magnéticos y durante la 2da guerra mundial se empezaron a utilizar estas señales para ubicar tormentas.
+
+Los Total Lightning Mapping permiten obtener una detallada estructura temporal y espacial de las descargas a partir de operar en las VHF pero no permiten obtener información de la polaridad, carga y corriente. Estos se pueden dividir en 2 tipos, los basados en interferometría en donde se disponen varias antenas cercas una de otra y permiten detectar rayos lejanos y los basados en el tiempo de arribo (TOA) en donde se ubican las antenas en una gran región y detectan los rayos en el interior, en estos últimos entran los Lightning Mapping Array. En el paper destacan diferencias en la detección que proveen cada uno.
+
+Luego están los sistemas que detectan los rayos en un área extensa a partir de medir las ondas en el espectro VLF/LF y permiten obtener información de la ubicación, polaridad y corriente pico. La idea del funcionamiento es más o menos la misma que antes, varias antenas miden el mismo rayo y triangulan la posición. La desventaja es que detectan principalmente rayos a tierra y solo los intranube más intensos porque los primeros tienen una corriente pico mucho más alta.
+
+Los sensores a escala global se pueden separar en los satelitales y en los de superficie. Los primeros como el Optical Transient Detector (OTD) y el Lightning Imaging Sensor (LIS) proveen datos de gran calidad pero sensan una zona específica del globo por unos pocos minutos y no logran separar entre rayos a tierra e intranube. Hubo algunos satélites que median la radiación VHF de los rayos también. Las redes de superficie globales se basan en tener antenas ubicadas en los distintos continentes y usar la metodología TOA pero claramente tienen poca eficiencia de detección teniendo picos en donde hay más densidad de antenas.
+
+La National Lightning Detection Network (NLDN) se inició en 1983 para cubrir la costa este de EEUU con apoyo de un instituto de investigación y fue creciendo a requerimiento de este hasta cubrir todo el país en 1989. Para mediados de la década del 90 implementaron mejoras llevando las eficiencia al 80-90\% con una localización de 0.5 km con estos valores cayendo rápido por fuera de EEUU. Luego mejoró la región de Canadá al acoplarse con un red de este país.
+
+\section{GLM}
+
+\section{Otras observaciones}
+
+\paragraph{Adcock y Clark 1947} \label{Adcock y Clark 1947}
+\textbf{The location of thunderstorms by radio \\direction-finding}
+
+Con la llegada de la segunda guerra mundial había escasez de observaciones entonces se empezó a impulsar fuertemente el desarrollo de la detección de rayos. El rayo en su camino por la atmósfera va emitiendo radiación que es la que captan las antenas y generalmente están polarizadas elípticamente y utilizando la técnica de direction-finding pueden localizar los rayos. Las reflecciones de la radiación en la ionósfera y la recepción de los distintos impactos de un mismo rayo complican la localización de los rayos. Proponen varias formas de reducir el error.
+\begin{itemize}
+    \item \textbf{Trabajar con frecuencias menores:} Frecuencias menores tienen menor error en la polarización. Pero tiene la desventaja de la que la energía reciba es mucho menor.
+    \item \textbf{Cambios en las antenas:}
+    \item \textbf{Métodos de modulación de brillo:} No se entiende mucho pero es algo como aumentar el brillo del osciloscopio al detectar un rayo.
+    \item \textbf{Métodos de tiempo de retraso:} Medir el tiempo de retraso que tiene una señal para llegar a 3 antenas diferentes y triangular. Tiene el problema de que la onda recibida puede ser levemente distinta en cada antena y hay que poder detectarlas igual en todas.
+    \item \textbf{Medición de rango forma de onda:}
+\end{itemize}
+
+Ponen las caraterísticas y diagramas del circuito del sistema de direction-finding que desarrollaron.
+
+\paragraph{Horner 1954} \label{Horner 1954}
+\textbf{The accuracy of the location of sources of atmospherics by radio direction-finding}
+
+Las primeras intentos operativos de tener un sistema de detección de rayos tenían mucho error e incluso era aleatorio. Con la implementación de \nameref{Adcock y Clark 1947} y el agregado de una nueva estación, los errores se redujeron pero seguía habiendo errores de hasta 10° en para algunas estaciones. Las fuentes de error en la localización se deben a errores instrumentales, errores del observador, cables cercanos a las instalaciones, errores en la localización de las antenas (terrenos con pendientes inducen errores) y errores en la polarización de la onda. Concluyen que el error instrumental y del observador pueden ser despreciados respecto de los otros, la interferencia entre las ondas de distintos rayos es aleatoria y el error inducido es bajo hasta distancias de 1000 km y para más de 1500 km es la fuente principal de error, los errores por la ubicación de las antenas puede generar mucho error pero puede ser corregido y los errores por la polarización son especialmente importantes en distancias intermedias y en especial de noche.
+
+\paragraph{Lewis et al. 1960} \label{Lewis et al. 1960}
+\textbf{Hyperbolic Direction Finding with sferics of Transatlantic Origin}
+
+Proponen medir la diferencia en el tiempo de arribo de la onda generada por el rayo en disitntas antenas para triangular la posición y de esta manera eliminan el error inducido por la polarización que tiene la metodología de direction-finding. La red consta de 3 antenas "esclavas" que miden el momento en que arriba la onda y lo envian a una estación "maestra" que también mide y es donde se hacen las mediciones. Para esta metodología es escencial que la forma de la señal recibida en cada antena sea similar, esto se ve afectado por la propagación de la onda en la atmósfera, el ruido y el error instrumental (este es el único controlable). La red está instalalada en Nueva Inglaterra y para testear la metodología se proponen localizar rayos en Europa tomando como referencia la ubicación que les dio la Oficina Británica de Meteorología durante Julio y Agosto de 1959. Encontraron que tenían un bias de 0.3 millas náuticas (0.5 km) de diferencia respecto de las mediciones británicas y un desvío de 31 millas náuticas (57 km). Notar que están asumiendo a las observaciones británicas como la verdad, estas también tienen un error.
+
+\paragraph{Proctor 1971} \label{Proctor 1971}
+\textbf{A Hyperbolic System for Obtaining VHF Radio Pictures of Lightning}
+
+A partir del conocimiento de que los rayos emiten radiación en el espectro VHF se proponen localizar las emisiones de los rayos y generar una imagen de los mismos. Para localizar los rayos emplearon 5 estaciones donde 4 miden y reenvian a la 5 para centralizar los datos y midiendo el tiempo de retraso con que llega a cada una triangulan la posición. Para realizar la localización toman las 5 mediciones de un mismo rayo y las van comparando dejando alguna fuera, si todas las mediciones se diferencian en más de 100 m rechazan el dato.
+
+\paragraph{Orville et al. 1983} \label{Orville et al. 1983}
+\textbf{An East Coast Lightning Detection Network}
+
+La red de la costa este se basa en la metodología de Magnetic Direction Finding (MDF) en la que el campo magnético emitido por los rayos es sensado por diversas antenas sobre las que se induce un voltaje que depende de la dirección de incidencia. La red consta de 10 antenas y dicen tener un 80\% de detección en la zona de intersección. Muestran un caso de estudio en el que hubo una gran cantidad de rayos y analizan realizan algunos análisis. Encuentran que la tasa de rayos positivos aumenta hacia el final del evento por ejemplo. También analizan el entorno sinóptico y remarcan que el pronóstico fue bastante malo para este caso.
+
+\paragraph{Lee 1986a} \label{Lee 1986a}
+\textbf{An experimental study of the remote location of lightning flashes using a VLF arrival time difference technique}
+
+Con la metodlogía de Arrival Time difference (ATD), a partir de medir la diferencia en el tiempo de arribo de la señal a 2 estaciones se puede definir la ubicación del rayo en la línea de ATD constante para esas 2 estaciones, agregando una estación más y comparándola con alguna de las otras 2 se puede limitar la ubicación a solo 2 puntos, agregando una cuarta estación la ubicación es única. Al usar 4 estaciones también se puede ir dejando una redundante para tener una estimación del error en la ubicación. Una configuración en la que las 4 antenas forman un cuadrado es lo ideal para tener una ubicación muy precisa dentro de este. Definen que para tener un sistema que reemplace al ridection finding tiene que medir las ATD con una precisión de 25 $\mu m$, para ello emplean una técnia de correlación para poder matchear los rayos recibidos en las distintas antenas. Esperan que la metodología propuesta les permita una resolución de los ATD de 0.1 $\mu m$. Una problemática que destacan de esta metodología es que los relojes de cada estación deben estar sincronizados lo mejor posible, explican como lo hicieron. De la comparación surge que la metodología ATD puede localizar mejor los rayos que la direction finding y cuando se observan muchos asociados a un mismo sistema el ATD tiene menor dispersión.
+
+\paragraph{Lee 1986b} \label{Lee 1986b}
+\textbf{An Operational System for the Remote Location of Lightning Flashes Using a VLF Arrival Time Difference Technique}
+
+La técnica de direction finding para este tiempo ya era obsoleta y además debido a su costo y por cuestiones políticas se implementa la metodología de \nameref{Lee 1986a} como su reemplazo. El sistema emplea 7 estaciones donde una es la central a la que las demás le envían las señales procesadas de los rayos recibidos y en esta se realizan los cálculos para localizar los rayos y retransmitir la información. Cada una de las estaciones va "escuchando" y cuando detecta un pico asociado a un rayo, graba la señal por un determinado tiempo que es uniforme para todas las estaciones. Una diferencia con \nameref{Lee 1986a} es que no se pueden transmitir todos los rayos detectados por limitaciones en la transferencia por lo que se realiza una selección. Esta selección se realiza a partir de emplear una de las estaciones como selectora imponiendo un umbral de detección bajo, todos las detecciones se envían a la estación control que determina un timestamp y lo envía a las otras estaciones para que reporten sus detecciones en torno a este. Para reportar los datos usan un estandar de la OMM que replica lo que se hacía con el direction finding pero este no logra representar la precisión de los nuevos datos por lo que también generan un mensaje con más resolución. La posibilidad de con pocas estaciones cubrir un gran área brinda la oportunidad de tener solo las estaciones suficientes como para tener redundancia si falla alguna. El sistema operativo logra localizar 400 rayos por hora.
+
+\paragraph{Orville y Songster 1987} \label{Orville y Songster 1987}
+\textbf{The east cost lightning detection network}
+
+Describen de nuevo el funcionamiento de la red nombrada en \nameref{Orville et al. 1983} que para este tiempo ya curbría toda la costa este de EEUU. Hacen más bien una estadística de las observaciones registradas hasta el momento. Detectan que los rayos negativos tienen una corriente pico mayor y que su distribución posee también posee una asimetría mucho mayor. Encuentran una clara mayor incidencia de rayos positivos en invienrno con un pico de 80\% de la totalidad de los rayos mientran que en verano es cercana a 0. Los errores en la detección de la red los asocian a que los rayos pueden ser de intensidad débil y no superar el umbral de detección, el sistema puede detectar el rayo pero no superar los criterios para asignarlo como nube-tierra o si el rayo ocurre en un intervalo de 6 milisegundos posterior a otro detectado. Los errores en la corriente pico surgen de los valores incluidos en la ecuación que usan para estimarla y están principalmente asociados a la precisión con que miden la ubicación del rayo.
