@@ -1,3 +1,111 @@
+#################
+## GLM + redes ##
+#################
+
+Wolfe y Nagler 1980:
+Conceptual design of a spaceborne lightning sensor
+
+Vonnegut et al 1983:
+Photographs of lightning from the space shuttl
+
+Jacobson et al. 1999:
+FORTE observations of lightning radio-frequency signatures: Capabilities and basic results
+
+Thomas et al. 2000:
+Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma.
+
+Dowden et al 2002:
+VLF lightning location by time of group arrival (TOGA) at multiple sites
+
+Murphy et al 2002:
+The value of cloud lightning in probabilistic thunderstorm warning
+
+Betz et al 2004:
+Lightning detection with 3D-discrimination of intracloud and cloud-to-ground discharges
+
+Boeck et al. 2004:
+A demonstration of the capabilities of multi-satellite observations of oceanic lightning
+
+Lay et al. 2004:
+WWLL global lightning detection system: Regional validation study in Brazil.
+
+Thomas et al. 2004:
+Accuracy of the lightning mapping array
+
+Christian et al. 2006:
+Geostationary lightning mapper (GLM)
+
+Jacobson et al. 2006:
+Performance assessment of the World Wide Lightning Location Network (WWLLN), using the Los Alamos Sferic Array (LASA) as ground truth.
+
+Mach et al. 2007:
+Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor
+
+Orville 2008:
+Development of the National Lightning Detection Network
+
+Adamo et al 2009:
+Lightning measurements from satellites and significance for storms in the Mediterranean
+
+Betz et al 2009:
+LINET-an international lightning detection network in Europe,
+
+Finke et al 2009:
+Optical detection of lightning from space
+
+Abarca et al. 2010:
+An evaluation of the Worldwide Lightning Location Network (WWLLN) using the National Lightning Detection Network (NLDN) as ground truth.
+
+Abreu et al. 2010:
+A performance assessment of the World Wide Lightning Location Network (WWLLN) via comparison with the Canadian Lightning Detection Network (CLDN)
+
+Nascimento et al 2011:
+Evaluation of U.S. national lightning detection network performance characteristics using rocket-triggered lightning data acquired in 2004-2009 
+
+Goodman et al. 2013:
+The GOES-R Geostationary Lightning Mapper (GLM)
+
+Nag et al 2014:
+Recent evolution of the U.S. National Lightning Detection Network
+
+Yoshida et al. 2014:
+Initial results of LF sensor network for lightning observation and characteristics of lightning emission in LF band
+
+Yang et al 2017:
+Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)
+
+Zhu et al 2017:
+Evaluation of ENTLN performance characteristics based on the ground truth natural and rocket-triggered lightning data acquired in Florida.
+
+Fierro et al 2018:
+Evolution of GLM observed total lightning in Hurricane Maria (2017) during the period of maximum intensity.
+
+Bruning et al. 2019:
+Meteorological imagery for the Geostationary Lightning Mapper.
+
+Carey et al. 2019:
+A radar investigation of storm morphology and precipitation processes during discrepancies between GOES-16 GLM and LMA observed lightning flash rates and jumps.
+
+Peterson 2019:
+Research applications for the Geostationary Lightning Mapper operational lightning flash data product
+
+Rudlosky et al. 2019:
+Initial geostationary lightning mapper observations.
+
+Hui et al. 2020:
+Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau 
+
+Mach 2020:
+Geostationary lightning mapper clustering algorithm stability
+
+Lang et al 2020:
+The RELAMPAGO Lightning Mapping Array: Overview and Initial Comparison with the Geostationary Lightning Mapper
+
+Borque et al 2020:
+Distinctive Signals in 1-min Observations of Overshooting Tops and Lightning Activity in a Severe Supercell Thunderstorm
+
+
+
 #######################
 # Latent Heat Nudging #
 #######################
@@ -322,109 +430,6 @@ The relationship between lightning flash rate and ice-related volume derived fro
 
 Medina et al 2021:
 Characterizing Charge Structure in Central Argentina Thunderstorms During RELAMPAGO Utilizing a New Charge Layer Polarity Identification Method
-
-#################
-## GLM + redes ##
-#################
-
-Christian et al. 1999:
-The detection of lightning from geostationary orbit
-
-Jacobson et al. 1999:
-FORTE observations of lightning radio-frequency signatures: Capabilities and basic results
-
-Thomas et al. 2000:
-Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma.
-
-Dowden et al 2002:
-VLF lightning location by time of group arrival (TOGA) at multiple sites
-
-Murphy et al 2002:
-The value of cloud lightning in probabilistic thunderstorm warning
-
-Betz et al 2004:
-Lightning detection with 3D-discrimination of intracloud and cloud-to-ground discharges
-
-Boeck et al. 2004:
-A demonstration of the capabilities of multi-satellite observations of oceanic lightning
-
-Lay et al. 2004:
-WWLL global lightning detection system: Regional validation study in Brazil.
-
-Thomas et al. 2004:
-Accuracy of the lightning mapping array
-
-Christian et al. 2006:
-Geostationary lightning mapper (GLM)
-
-Jacobson et al. 2006:
-Performance assessment of the World Wide Lightning Location Network (WWLLN), using the Los Alamos Sferic Array (LASA) as ground truth.
-
-Mach et al. 2007:
-Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor
-
-Orville 2008:
-Development of the National Lightning Detection Network
-
-Adamo et al 2009:
-Lightning measurements from satellites and significance for storms in the Mediterranean
-
-Betz et al 2009:
-LINET-an international lightning detection network in Europe,
-
-Finke et al 2009:
-Optical detection of lightning from space
-
-Abarca et al. 2010:
-An evaluation of the Worldwide Lightning Location Network (WWLLN) using the National Lightning Detection Network (NLDN) as ground truth.
-
-Abreu et al. 2010:
-A performance assessment of the World Wide Lightning Location Network (WWLLN) via comparison with the Canadian Lightning Detection Network (CLDN)
-
-Nascimento et al 2011:
-Evaluation of U.S. national lightning detection network performance characteristics using rocket-triggered lightning data acquired in 2004-2009 
-
-Goodman et al. 2013:
-The GOES-R Geostationary Lightning Mapper (GLM)
-
-Nag et al 2014:
-Recent evolution of the U.S. National Lightning Detection Network
-
-Yoshida et al. 2014:
-Initial results of LF sensor network for lightning observation and characteristics of lightning emission in LF band
-
-Yang et al 2017:
-Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)
-
-Zhu et al 2017:
-Evaluation of ENTLN performance characteristics based on the ground truth natural and rocket-triggered lightning data acquired in Florida.
-
-Fierro et al 2018:
-Evolution of GLM observed total lightning in Hurricane Maria (2017) during the period of maximum intensity.
-
-Bruning et al. 2019:
-Meteorological imagery for the Geostationary Lightning Mapper.
-
-Carey et al. 2019:
-A radar investigation of storm morphology and precipitation processes during discrepancies between GOES-16 GLM and LMA observed lightning flash rates and jumps.
-
-Peterson 2019:
-Research applications for the Geostationary Lightning Mapper operational lightning flash data product
-
-Rudlosky et al. 2019:
-Initial geostationary lightning mapper observations.
-
-Hui et al. 2020:
-Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau 
-
-Mach 2020:
-Geostationary lightning mapper clustering algorithm stability
-
-Lang et al 2020:
-The RELAMPAGO Lightning Mapping Array: Overview and Initial Comparison with the Geostationary Lightning Mapper
-
-Borque et al 2020:
-Distinctive Signals in 1-min Observations of Overshooting Tops and Lightning Activity in a Severe Supercell Thunderstorm
 
 #################
 ## Asimilacion ##
