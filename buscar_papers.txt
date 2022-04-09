@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Wolfe y Nagler 1980:
-Conceptual design of a spaceborne lightning sensor
-
 Vonnegut et al 1983:
 Photographs of lightning from the space shuttl
 
