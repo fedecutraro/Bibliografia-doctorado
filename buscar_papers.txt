@@ -2,12 +2,6 @@
 ## GLM + redes ##
 #################
 
-Vonnegut et al 1983:
-Photographs of lightning from the space shuttl
-
-Jacobson et al. 1999:
-FORTE observations of lightning radio-frequency signatures: Capabilities and basic results
-
 Thomas et al. 2000:
 Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma.
 
