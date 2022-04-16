@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Thomas et al. 2000:
-Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma.
-
 Dowden et al 2002:
 VLF lightning location by time of group arrival (TOGA) at multiple sites
 
@@ -167,6 +164,9 @@ Riming electrification as a charge generation mechanism in thunderstorms.
 
 Latham 1981:
 The electrification of thunderstorms
+
+Thomason y Krider 1982:
+The effects of clouds on the light produced by lightning
 
 Williams 1985:
 Large-scale charge separation in thunderclouds.
