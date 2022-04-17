@@ -105,3 +105,8 @@ Hacen una comparación entre los rayos detectados por un Lightning Mapping Array
 \textbf{VLF lightning location by time of group arrival (TOGA) at multiple sites}
 
 Detectar los rayos usando la metodología ATD tiene complejidades para definir el momento en que la señal del rayo llega a las diferentes antenas, y esto es más complicado cuanto más lejos se encuentra la antena de la ubicación del rayo debido a la atenuación. Una mejor metodología es usar el tiempo al que arriba la onda total que se propaga a la velocidad de grupo. La detección del TOGA se hace cuando la derivada de la fase de la onda respecto de la frecuencia cambia de signo.
+
+\paragraph{Betz et al. 2004} \label{Betz et al. 2004}
+\textbf{Lightning detection with 3D-discrimination of intracloud and cloud-to-ground discharges}
+
+Las redes de VLF generalmente solo detectan la posición 2D del rayo, en este trabajo proponen una metodología para ubicarlos también en altura y así poder discriminar entre rayos a tierra e intranube. La idea no es tener una ubicación precisa de la altura sino más bien tener una idea general de si fue cerca de superficie o no. En general , en el rango VLF, se usan tratamientos estadísticos para diferenciarlos. En este caso proponen explotar el uso de una red de pequeña escala para comparar el tiempo de retardo asumiendo que la emisión se dio cerca de superficie (rayo a tierra) o en altura (intranube). El funcionamiento es el siguiente, primero detectan la ubicación del rayo en 2D de manera convencional y luego para la estación más cercana al rayo comparan el retardo con el esperado para una emisión cerca de superficie, aunque operativamente meten la estimación de la altura dentro del algortimo de ubicación del rayo.

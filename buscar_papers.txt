@@ -3,10 +3,7 @@
 #################
 
 Murphy et al 2002:
-The value of cloud lightning in probabilistic thunderstorm warning
-
-Betz et al 2004:
-Lightning detection with 3D-discrimination of intracloud and cloud-to-ground discharges
+The value of cloud lightning in probabilistic thunderstorm warning  #### No lo encontre
 
 Boeck et al. 2004:
 A demonstration of the capabilities of multi-satellite observations of oceanic lightning
