@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Dowden et al 2002:
-VLF lightning location by time of group arrival (TOGA) at multiple sites
-
 Murphy et al 2002:
 The value of cloud lightning in probabilistic thunderstorm warning
 
