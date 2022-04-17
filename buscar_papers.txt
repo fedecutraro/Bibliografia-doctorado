@@ -2,12 +2,6 @@
 ## GLM + redes ##
 #################
 
-Murphy et al 2002:
-The value of cloud lightning in probabilistic thunderstorm warning  #### No lo encontre
-
-Boeck et al. 2004:
-A demonstration of the capabilities of multi-satellite observations of oceanic lightning
-
 Lay et al. 2004:
 WWLL global lightning detection system: Regional validation study in Brazil.
 
