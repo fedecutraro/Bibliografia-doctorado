@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Lay et al. 2004:
-WWLL global lightning detection system: Regional validation study in Brazil.
-
 Thomas et al. 2004:
 Accuracy of the lightning mapping array
 
