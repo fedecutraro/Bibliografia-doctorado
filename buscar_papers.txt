@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Mach et al. 2007:
-Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor
-
 Orville 2008:
 Development of the National Lightning Detection Network
 
