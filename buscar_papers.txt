@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Thomas et al. 2004:
-Accuracy of the lightning mapping array
-
 Christian et al. 2006:
 Geostationary lightning mapper (GLM)
 
