@@ -2,12 +2,6 @@
 ## GLM + redes ##
 #################
 
-Christian et al. 2006:
-Geostationary lightning mapper (GLM)
-
-Jacobson et al. 2006:
-Performance assessment of the World Wide Lightning Location Network (WWLLN), using the Los Alamos Sferic Array (LASA) as ground truth.
-
 Mach et al. 2007:
 Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor
 
