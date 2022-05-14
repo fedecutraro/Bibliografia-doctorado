@@ -2,21 +2,6 @@
 ## GLM + redes ##
 #################
 
-Orville 2008:
-Development of the National Lightning Detection Network
-
-Adamo et al 2009:
-Lightning measurements from satellites and significance for storms in the Mediterranean
-
-Betz et al 2009:
-LINET-an international lightning detection network in Europe,
-
-Finke et al 2009:
-Optical detection of lightning from space
-
-Abarca et al. 2010:
-An evaluation of the Worldwide Lightning Location Network (WWLLN) using the National Lightning Detection Network (NLDN) as ground truth.
-
 Abreu et al. 2010:
 A performance assessment of the World Wide Lightning Location Network (WWLLN) via comparison with the Canadian Lightning Detection Network (CLDN)
 
@@ -121,6 +106,9 @@ Large dependency of charge distribution in a tropical cyclone inner core upon ae
 Mccaul et al 2020:
 Sensitivities of the WRF lightning forecasting algorithm to parameterized microphysics and boundary layer schemes.
 
+Sun et al. 2021:
+Aerosol Effects on Electrification and Lightning Discharges in a Multicell Thunderstorm Simulated by the WRF-ELEC Model
+
 ##########################
 ## Asimilacion de rayos ##
 ##########################
@@ -179,6 +167,9 @@ The vertical profile of radar reflectivity of convective cells: A strong indicat
 
 Carey y Rutledge 1996:
 A multiparameter radar case study of the microphysical and kinematic evolution of a lightning producing storm.
+
+Shao y Krehbiel 1996:
+The spatial and temporal development of intracloud lightning.
 
 Carey y Rutledge 1998:
 Electrical and multiparameter radar observations of a severe hailstorm
