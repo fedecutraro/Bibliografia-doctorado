@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Abreu et al. 2010:
-A performance assessment of the World Wide Lightning Location Network (WWLLN) via comparison with the Canadian Lightning Detection Network (CLDN)
-
 Nascimento et al 2011:
 Evaluation of U.S. national lightning detection network performance characteristics using rocket-triggered lightning data acquired in 2004-2009 
 
