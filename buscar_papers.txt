@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Goodman et al. 2013:
-The GOES-R Geostationary Lightning Mapper (GLM)
-
 Nag et al 2014:
 Recent evolution of the U.S. National Lightning Detection Network
 
@@ -33,7 +30,7 @@ Rudlosky et al. 2019:
 Initial geostationary lightning mapper observations.
 
 Hui et al. 2020:
-Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau 
+Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau
 
 Mach 2020:
 Geostationary lightning mapper clustering algorithm stability
@@ -108,7 +105,7 @@ Aerosol Effects on Electrification and Lightning Discharges in a Multicell Thund
 ##########################
 
 Ran y Zhou 2011: #TODO Lo encontre pero esta en chino/japones
-Application of lightning observations of TRMM satellite to the mesoscale numerical model by a new nudging assimilation adjustment technique. 
+Application of lightning observations of TRMM satellite to the mesoscale numerical model by a new nudging assimilation adjustment technique.
 
 #####################
 ## Electrificacion ##
@@ -172,7 +169,7 @@ MacGorman y Rust 1998:
 The Electrical Nature of Storms (Parece que es un libro)
 
 Petersen y Rutledge 1998:
-On the relationship between cloud-to-ground lightning and convective rainfall 
+On the relationship between cloud-to-ground lightning and convective rainfall
 
 Solomon y Baker 1998:
 Lightning flash rate and type in convective storms
@@ -181,7 +178,7 @@ Williams et al. 1999:
 The behavior of total lightning activity in severe Florida thunderstorms
 
 Boccippio et al. 2001:
-Combined satellite- and surface-based estimation of the intracloud–cloud-to-ground lightning ratio over 
+Combined satellite- and surface-based estimation of the intracloud–cloud-to-ground lightning ratio over
 the continental United States
 
 Williams 2001:
@@ -356,7 +353,7 @@ Fierro et al. 2018:
 Evolution of GLM observed total lightning in Hurricane Maria (2017) during the period of maximum intensity.
 
 Fierro y Mansell 2018:
-Relationships between electrification and storm-scale properties based on idealized simulations of 
+Relationships between electrification and storm-scale properties based on idealized simulations of
 an intensifying hurricane-like vortex.
 
 Carey et al 2019:
@@ -460,4 +457,3 @@ Refining the relationship between lightning and convective rainfall over the oce
 
 Tinmaker et al 2015:
 Lightning activity and its association with rainfall and convective available potential energy over Maharashtra.
-
