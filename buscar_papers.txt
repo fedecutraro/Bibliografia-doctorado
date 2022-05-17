@@ -2,17 +2,8 @@
 ## GLM + redes ##
 #################
 
-Nag et al 2014:
-Recent evolution of the U.S. National Lightning Detection Network
-
-Yoshida et al. 2014:
-Initial results of LF sensor network for lightning observation and characteristics of lightning emission in LF band
-
 Yang et al 2017:
 Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)
-
-Zhu et al 2017:
-Evaluation of ENTLN performance characteristics based on the ground truth natural and rocket-triggered lightning data acquired in Florida.
 
 Fierro et al 2018:
 Evolution of GLM observed total lightning in Hurricane Maria (2017) during the period of maximum intensity.
