@@ -2,8 +2,11 @@
 ## GLM + redes ##
 #################
 
-Yoshida et al. 2009
-A fifth-power relationship for lightning activity from Tropical Rainfall Measuring Mission satellite observations
+Thomas et al. 2000:
+Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma
+
+Ushio et al. 2002:
+Cross-sensor comparison of the lightning imaging sensor (LIS)
 
 Bruning et al. 2019:
 Meteorological imagery for the Geostationary Lightning Mapper.
@@ -178,6 +181,9 @@ Boccippio et al. 2001:
 Combined satellite- and surface-based estimation of the intracloud–cloud-to-ground lightning ratio over
 the continental United States
 
+Ushio et al. 2001:
+A survey of thunderstorm flash rates compared to cloud top height using TRMM satellite data
+
 Williams 2001:
 The electriﬁcation of severe storms. In: Severe Convective Storms
 
@@ -186,6 +192,9 @@ Simulated three-dimensional branched lightning in a numerical thunderstorm model
 
 Qie et al 2002:
 Some features of stepped and dartstepped leaders near the ground in natural negative cloud-to-ground lightning discharges
+
+Stolzenburg et al. 2002:
+Two simultaneous charge structures in thunderstorm convection
 
 Williams y Stanfill 2002:
 The physical origin of the land–ocean contrast in lightning activity
