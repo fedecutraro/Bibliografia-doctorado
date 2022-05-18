@@ -2,11 +2,8 @@
 ## GLM + redes ##
 #################
 
-Yang et al 2017:
-Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)
-
-Fierro et al 2018:
-Evolution of GLM observed total lightning in Hurricane Maria (2017) during the period of maximum intensity.
+Yoshida et al. 2009
+A fifth-power relationship for lightning activity from Tropical Rainfall Measuring Mission satellite observations
 
 Bruning et al. 2019:
 Meteorological imagery for the Geostationary Lightning Mapper.
@@ -79,8 +76,17 @@ Kinematic and microphysical control of lightning in multicell convection over Al
 Federico et al 2014:
 Simulating lightning into the RAMS model: implementation and preliminary results.
 
+Fierro et al. 2015:
+Explicitly simulated electrification and lightning within a tropical cyclone based on the environment of Hurricane Isaac (2012)
+
 Basarb et al 2015:
 An improved lightning flash rate parameterization developed from Colorado DC3 thunderstorm data for use in cloud-resolving chemical transport models
+
+Fierro y Mansell 2017:
+Electrification and lightning in idealized simulations of a hurricane-like vortex subject to wind shear and sea surface temperature cooling
+
+Fierro y Mansell 2018:
+Relationships between electrification and storm-scale properties based on idealized simulations of an intensifying hurricane-like vortex.
 
 Sato et al 2019:
 Large dependency of charge distribution in a tropical cyclone inner core upon aerosol number concentration
@@ -327,6 +333,9 @@ Occurrence conditions of positive cloud-to-ground flashes in severe thunderstorm
 
 Mattos et al 2016:
 Polarimetric radar characteristics of storms with and without lightning activity
+
+Medici et al. 2016:
+The intracloud lightning fraction in the contiguous United States.
 
 Ribaud et al 2016:
 Relationships between total lightning activity, microphysics and kinematics during the 24 September 2012 HyMeX bow-echo system
