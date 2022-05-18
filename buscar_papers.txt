@@ -2,12 +2,6 @@
 ## GLM + redes ##
 #################
 
-Thomas et al. 2000:
-Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma
-
-Ushio et al. 2002:
-Cross-sensor comparison of the lightning imaging sensor (LIS)
-
 Bruning et al. 2019:
 Meteorological imagery for the Geostationary Lightning Mapper.
 
