@@ -18,7 +18,71 @@ Los sensores a escala global se pueden separar en los satelitales y en los de su
 
 La National Lightning Detection Network (NLDN) se inició en 1983 para cubrir la costa este de EEUU con apoyo de un instituto de investigación y fue creciendo a requerimiento de este hasta cubrir todo el país en 1989. Para mediados de la década del 90 implementaron mejoras llevando las eficiencia al 80-90\% con una localización de 0.5 km con estos valores cayendo rápido por fuera de EEUU. Luego mejoró la región de Canadá al acoplarse con un red de este país.
 
-\section{GLM}
+\section{GLM, LIS, LMI}
+
+\paragraph{Wolfe y Nagler 1980} \label{Wolfe y Nagler 1980}
+\textbf{Conceptual design of a a spaceborne lightning sensor}
+
+Hasta esta época las mediciones de rayos con satélites se limitaban a sensores montados en satélites de órbita polar y solo funcionaban de noche (excepto rayos muy intensos) entonces proponen un sensor geoestacionario que funcionaría también de día. Hacen estimaciones de cómo tiene que estar diseñado el sensor para poder detectar los rayos, por ejemplo, el sensor tiene que medir a una frecuencia igual a la de la duración de los rayos para poder detectarlos incluso de día debido a que la radiación reflecjada del Sol es varios ordenes de magnitud mayor.
+
+\paragraph{Christian et al. 1989} \label{Christian et al. 1989}
+\textbf{The Detection of Lightning From Geostationary Orbit}
+
+Hacen la descripción del sensor Lightning Mapper Sensor (LMS) que proponían para montar en los GOES de mediados de 1990. Estudios previos realizados desde aviones volando por encima de tormentas demostraron que es posible localizar tanto los rayos intranube como los a tierra al detectar picos de energía en el espectro visible/infrarrojo cercano. La idea es que tenga una resolución de 10 km y aplicar diversos filtros para poder tener una buena detección incluso durante el día porque en este caso se tiene la radiación del Sol reflejada que "enmascara" los rayos.
+
+\paragraph{Christian et al. 1992} \label{Christian et al. 1992}
+\textbf{Lightning Imaging Sensor (LIS) for the Earth Observing System}
+
+Es el documento técnico sobre el sensor LIS. Citan varios papers sobre estimaciones satelitales de la actividad eléctrica pero destacan que estos primeros intentos tenían poca resolución y eficiencia de detección. Se basan en estudios previos desde aeronaves y es trabajos previos como \refname{Christian et al. 1989} para construirlo. Destacan las ventajas que va a traer por su resolución de 10 km en un campo de visión de 1000x1000 km y su frecuencia de observación de 2 ms y la capacidad de sensar tormentas durante algunos minutos. Describen también las diversas líneas de investigación que se verían beneficiadas por las observaciones, entre las que se encuentran el estudio de relaciones entre la precipitación y la actividad eléctrica, climatologías de actividad eléctrica y estudios relacionados a su distribución espacial, mejor entendimiento de la electrificación de la atmósfera y estudios que relacionan la actividad eléctrica con la química de la atmósfera. Por último describen las características del instrumento y cuestiones operativas del funcionamiento.
+
+\paragraph{Thomas et al. 2000} \label{Thomas et al. 2000}
+\textbf{Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma}
+
+Hacen una comparación entre los rayos detectados por un Lightning Mapping Array (LMA) que mide las descargas en el rango del VHF contra las observaciones del sensor LIS en el satélite TRMM para el caso de una tormenta en donde se tienen observaciones de ambos. Encuentran que el LIS detecta la mayoría de las descargas pero se le escapan principalmente aquellos que se confinan a las capas más bajas aunque en varios de esos casos, fueron tomados como ruido por el algoritmo que usan para filtrarlo. De un total de 128 descargas detectadas por el LMA y 101 que se extendieron a niveles altos, el LIS detectó 99 aunque un bajo porcentaje fueron filtradas como ruido. Encuentran una tendencia a las detecciones del LIS se dan principalmente al final de las descargas intranube. Se detectaron casi la totalidad de los intranube y un 60\% de los a tierra.
+
+\paragraph{Ushio et al. 2002} \label{Ushio et al. 2002}
+\textbf{Cross-sensor comparison of the Lightning Imaging Sensor (LIS)}
+
+Comparan las mediciones del LIS con las de la NLDN y la red Lightning Detection and Ranging (LDAR) para 3 tormentas. Las tormentas se encuentran ubicadas cerca de la red LDAR por trabajar esta en el rango de las VHF. La comparación la realizan para 37 flashes detectados tanto por la LDAR como por la NLDN. Para uno de los rayos analizados, el LIS solo detecta la parte intranube del mismo y no el impacto a tierra en si asociado probablemente al espesor de la nube, también los detecta a varios km de distancia de la ubicación real. Encuentran también que la duración del flash según LIS es más corta porque este no detecta de manera correcta el inicio viendo solo el final del mismo. Comparan la ubicación del total de rayos analizados del LIS con la LDAR y encuentran que los a tierra tienen 3 veces más diferencia que los intranube (12 y 4 km respectivamente), no saben las causas.
+
+\paragraph{Boeck et al. 2004} \label{Boeck et al. 2004}
+\textbf{A demonstration of the capabilities of multisatellite observations of oceanic lightning}
+
+Hacen un estudio en el que combinan las observaciones del LIS (\refname{Christian et al. 1992}) con el FORTE (\refname{Jacobson et al. 1999) para obtener mayor información sobre una misma tormenta. En un período de 4 años buscaron los casos en que sensaron la misma tormenta y encontraron 5 casos sobre el océanos pero analizan solo el caso de un MCS. En general todos los rayos detectados por el LIS también fueron detectados por el isntrumento óptico del FORTE pero este último suele ver menos. Las mediciones de los otros sensores del TRMM como el radar y los que generan imágenes satelitales en IR y MW muestran que los rayos se generan en la zona de precipitación y especialmente asociadas a la fase hielo.
+
+\paragraph{Mach et al. 2007} \label{Mach et al. 2007}
+\textbf{Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor}
+
+Hacen un estudio de cómo afecta la metodología de clusterización de los datos a los resultados. El algoritmo de clusterización se basa en 3 niveles donde cada elemento de un nivel se asocia solamente con uno del nivel superior. El nivel más bajo son los \textbf{eventos} que representan la unidad básica de detección, es decir, un pixel excedió el umbral de detección en una imagen. El siguiente nivel son los \textbf{grupos}, que representan eventos que se dan en píxeles consecutivos. El último nivel son los \textbf{flashes} que representan grupos que se distancias menos de una "x" cantidad de km e "y" ms, donde "x" e "y" dependen del sensor (Para el LIS son 5.5 km y 330 ms). La primer pureba que hacen es permitir que los grupos puedan correlacionarse en el tiempo para agarrar eventos que pueden haber quedado en imágenes consecutivas. Esto claramente reduce la cantidad de grupos en el set de datos que usaron pero aumenta la cantidad de flashes porque grupos que antes se podían unir en un solo flash ahora ya no pueden. La otra opción que prueban sobre los grupos es permitir un gap de pixels entre eventos para asociarlos a un mismo grupo, esto no les genera un cambio significativo. Para el algoritmo que agrupa grupos en flashes pruebas 2 cosas, cambiar el tiempo y la escala espacial en que se correlacion grupos. Al variar el tiempo entre 100 y 1000 ms, para tiempos menores al default (330 ms) la cantidad de flashes aumenta y para tiempos mayores se reduce, esto es espcialmente claro en los casos que presentan mayores tasas de rayos. Al cambiar la escala espacial con que agrupan grupos al tomar valores de 1 km la cantidad de flashes se cuadruplicaba y nuevamente el mayor efecto se ve en las mayores tasas.
+
+\paragraph{Yoshida et al. 2009} \label{Yoshida et al. 2009}
+\textbf{A fifth-power relationship for lightning activity from Tropical Rainfall Measuring Mission satellite observations}
+
+\textcolor{red}{Williams 1985} propuso que la altura de la tormenta y la cantidad de rayos estaban relacionados como una potencia de 5, en este trabajo evalúan esta relación con datos del TRMM y proponen que podŕia ser mejor usar el espesor de la nube desde la isoterma de 0. Para estimar la altura de la tormenta usan el radar del TRMM y para los rayos el LIS. Para el estudio usan la medida de número de rayos por segundo por nube convectiva (NFSC) y lo relacionan con el espesor de la nube con la siguiente expresión $NFSC = 10^{\beta}D^{\alpha}$ donde $\beta$ y $\alpha$ los calculan bajo diferentes condiciones. El período que analizan es desde enero de 1998 hasta diciembre de 2005. Tomando todo ese período encuentran que $\alpha = 4.9 \pm 0.1$ lo que apoya la relación de una quinta potencia. Dejan fuera del análisis los espesores de nube mayores a 13km porque a partir de ahí la tasa de rayo vista por el LIS es afectada porque los rayos que se dan en niveles más bajos no logran radiar desde el tope de la nube. Evalúan distintas regiones del globo separándolas entre tierra y agua y encuentran que el $\alpha$ es aproximadamente 5 y el $\beta$ sobre el agua es 1 menos que sobre tierra indicando que hay 10 veces más rayos sobre tierra para nubes de igual espesor.
+
+\paragraph{Goodman et al. 2013} \label{Goodman et al. 2013}
+\textbf{The GOES-R Geostationary Lightning Mapper (GLM)}
+
+El GLM mide el cambio en al luminosidad del tope de las nubes en el infrarrojo cercano ante un rayo con una resolución de 8 km en el nadir y 14 km en el borde del dominio en que mide. La eficiencia esperada de detección es del 86\% de todos los rayos. A los datos crudos medidos por el satélite se les hace un postprocesamiento en el que por ejemplo entra el algoritmo de clusterización usado en \refname{Mach et al. 2007}. Para cumplir el criterio de que 2 grupos son del mismo flash, la distancia entre grupos la miden como la mínima entre los eventos de cada grupo. Después destacan las ventajas que va a traer y pruebas que se van a hacer previas a la puesta operativa.
+
+\paragraph{Yang et al. 2017} \label{Yang et al. 2017}
+\textbf{Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)}
+
+La serie de satélites FY-4 representa la segunda generación de satélites geoestacionario que cubren la región de China. Entre todas las mejoras que incluye se encuentra un sensor de rayos con especificaciones idénticas a las del GLM.
+
+\paragraph{Fierro et al. 2018} \label{Fierro et al. 2018}
+\textbf{Evolution of GLM-Observed Total Lightning in Hurricane Maria (2017) during the Period of Maximum Intensity}
+
+Evaluan cómo es la relación entre la actividad eléctrica (rate y ubicación) en un huracán y su intensificación. Para medir la actividad eléctrica usan el GLM, que aunque en ese momento estaba en fase de prueba y hubo algunos problemas con el procesamiento de la información los resultados no deberían ser fuertemente afectados, la acumularon durante 1 hora en una retícula regular de 10 km. Para ver la convección usan radares ubicados en la trayectoria y el canal 14 del ABI. Encuentran que la actividad eléctrica tiene un pico previo a la intensificación especialmente fuera del centro del huracán pero también notan que los picos en eventos y grupos se dan antes que en los flashes, entonces en el pico de flashes la cantidad de eventon y grupos que los componen es menor. Encuentrna que la mayor activiad eléctrica se daba en el cuadrante sudeste probablemente relacionado a convección que se generó en el cuadrante noroeste (en la dirección del movimiento del huracán) y "rotó" hacia ese cuadrante sumado a que con el espesor de la nubosidad se detectan principalmente los rayos intranube y no los a tierra. Por último comparan las mediciones del GLM con las de la WWLLN encontrando que esta última vio muchos menos rayos como era de esperar pero el patrón de cantidad de rayos por hora es bastante similar con leves diferencias en el tiempo en que ocurrían probablemente asociado a que la WWLLN no tiene mucha eficiencia en los rayos intranube. Hacen también una correlación entre las series horarias de los rayos de la WWLLN y los eventos-grupos-flashes del GLM encontrando una alta correlación con los flashes.
+
+\paragraph{Bruning et al. 2019} \label{Bruning et al. 2019}
+\textbf{Meteorological Imagery for the Geostationary Lightning Mapper}
+
+
+\paragraph{Rudlosky et al. 2019} \label{Rudlosky et al. 2019}
+\textbf{Initial Geostationary Lightning Mapper Observations}
+
+Hacen un análisis de los primeros 9 meses de imágenes operativas del GLM. Usa una altura estandar del tope de nube que va de 14 km en el Ecuador a 6 km en los polos. Tiene un postprocesamiento en tierra en que saca los eventos que son más probables de ser ruido. Para el análisis dividieron el dataset según la estación del año y sacaron los eventos-grupos-flashes con flag de calidad distinto de 0. Hacen estadísticas sobre la duración, extensión, energía, etc de los flashes y ven que todos los valores son mayores sobre agua que sobre tierra. Los flashes en zonas montañosas suelen ser de menor duración y extensión mientras que en las planicies, probablemente asociado a sistemas convectivos, presentan mayor duración y extensión. Describen varias fuentes de problemas como puede ser el sunglint sobre el océano y lagos en los que se ven rayos de mucha duración pero de pequeña extensión o la intrusión de radiación directa del Sol cuando el sensor del GLM queda muy cerca de esta.
 
 \section{Otras observaciones}
 
@@ -51,11 +115,6 @@ Proponen medir la diferencia en el tiempo de arribo de la onda generada por el r
 
 A partir del conocimiento de que los rayos emiten radiación en el espectro VHF se proponen localizar las emisiones de los rayos y generar una imagen de los mismos. Para localizar los rayos emplearon 5 estaciones donde 4 miden y reenvian a la 5 para centralizar los datos y midiendo el tiempo de retraso con que llega a cada una triangulan la posición. Para realizar la localización toman las 5 mediciones de un mismo rayo y las van comparando dejando alguna fuera, si todas las mediciones se diferencian en más de 100 m rechazan el dato.
 
-\paragraph{Wolfe y Nagler 1980} \label{Wolfe y Nagler 1980}
-\textbf{Conceptual design of a a spaceborne lightning sensor}
-
-Hasta esta época las mediciones de rayos con satélites se limitaban a sensores montados en satélites de órbita polar y solo funcionaban de noche (excepto rayos muy intensos) entonces proponen un sensor geoestacionario que funcionaría también de día. Hacen estimaciones de cómo tiene que estar diseñado el sensor para poder detectar los rayos, por ejemplo, el sensor tiene que medir a una frecuencia igual a la de la duración de los rayos para poder detectarlos incluso de día debido a que la radiación reflecjada del Sol es varios ordenes de magnitud mayor.
-
 \paragraph{Orville et al. 1983} \label{Orville et al. 1983}
 \textbf{An East Coast Lightning Detection Network}
 
@@ -76,16 +135,6 @@ La técnica de direction finding para este tiempo ya era obsoleta y además debi
 
 Describen de nuevo el funcionamiento de la red nombrada en \nameref{Orville et al. 1983} que para este tiempo ya curbría toda la costa este de EEUU. Hacen más bien una estadística de las observaciones registradas hasta el momento. Detectan que los rayos negativos tienen una corriente pico mayor y que su distribución posee también posee una asimetría mucho mayor. Encuentran una clara mayor incidencia de rayos positivos en invienrno con un pico de 80\% de la totalidad de los rayos mientran que en verano es cercana a 0. Los errores en la detección de la red los asocian a que los rayos pueden ser de intensidad débil y no superar el umbral de detección, el sistema puede detectar el rayo pero no superar los criterios para asignarlo como nube-tierra o si el rayo ocurre en un intervalo de 6 milisegundos posterior a otro detectado. Los errores en la corriente pico surgen de los valores incluidos en la ecuación que usan para estimarla y están principalmente asociados a la precisión con que miden la ubicación del rayo.
 
-\paragraph{Christian et al. 1989} \label{Christian et al. 1989}
-\textbf{The Detection of Lightning From Geostationary Orbit}
-
-Hacen la descripción del sensor Lightning Mapper Sensor (LMS) que proponían para montar en los GOES de mediados de 1990. Estudios previos realizados desde aviones volando por encima de tormentas demostraron que es posible localizar tanto los rayos intranube como los a tierra al detectar picos de energía en el espectro visible/infrarrojo cercano. La idea es que tenga una resolución de 10 km y aplicar diversos filtros para poder tener una buena detección incluso durante el día porque en este caso se tiene la radiación del Sol reflejada que "enmascara" los rayos.
-
-\paragraph{Christian et al. 1992} \label{Christian et al. 1992}
-\textbf{Lightning Imaging Sensor (LIS) for the Earth Observing System}
-
-Es el documento técnico sobre el sensor LIS. Citan varios papers sobre estimaciones satelitales de la actividad eléctrica pero destacan que estos primeros intentos tenían poca resolución y eficiencia de detección. Se basan en estudios previos desde aeronaves y es trabajos previos como \refname{Christian et al. 1989} para construirlo. Destacan las ventajas que va a traer por su resolución de 10 km en un campo de visión de 1000x1000 km y su frecuencia de observación de 2 ms y la capacidad de sensar tormentas durante algunos minutos. Describen también las diversas líneas de investigación que se verían beneficiadas por las observaciones, entre las que se encuentran el estudio de relaciones entre la precipitación y la actividad eléctrica, climatologías de actividad eléctrica y estudios relacionados a su distribución espacial, mejor entendimiento de la electrificación de la atmósfera y estudios que relacionan la actividad eléctrica con la química de la atmósfera. Por último describen las características del instrumento y cuestiones operativas del funcionamiento.
-
 \paragraph{Cummins et al. 1998} \label{Cummins et al. 1998}
 \textbf{A Combined TOA/MDF Technology Upgrade of the U.S. National Lightning Detection Network}
 
@@ -96,30 +145,15 @@ En este trabajo se comentan los desarrollos que se hicieron para mejorar la efic
 
 Describe las observaciones de las rayos a partir de las ondas VHF desde un satélite. Ya había habido satélites con este tipo de sensores pero tenían el problema de que estaban afectados por las emisiones generadas por el humano y terminaban enmascarando la mayoría de los rayos y solo se detectaban los más intensos. El satélite FORTE aplica diversos filtros para poder quedarse con la mayoría de los rayos, hacen una descripción de todo el proceso. Centran el análisis especialmente en un tipo de rayos detectado por el satélite anterior que son los TIPP (transionospheric pulse pairs) y poder determinar su origen (reflexión de la emisión del rayo en la superficie o actividad asociada al rayo generada en la ionósfera). Realizan varios análisis de los datos y todos le coinciden con lo esperado por la teoría de que se producen por la reflexión de la emisión del rayo en la superficie.
 
-\paragraph{Thomas et al. 2000} \label{Thomas et al. 2000}
-\textbf{Comparison of ground-based 3-dimensional lightning mapping observations with satellite-based LIS observations in Oklahoma}
-
-Hacen una comparación entre los rayos detectados por un Lightning Mapping Array (LMA) que mide las descargas en el rango del VHF contra las observaciones del sensor LIS en el satélite TRMM para el caso de una tormenta en donde se tienen observaciones de ambos. Encuentran que el LIS detecta la mayoría de las descargas pero se le escapan principalmente aquellos que se confinan a las capas más bajas aunque en varios de esos casos, fueron tomados como ruido por el algoritmo que usan para filtrarlo. De un total de 128 descargas detectadas por el LMA y 101 que se extendieron a niveles altos, el LIS detectó 99 aunque un bajo porcentaje fueron filtradas como ruido. Encuentran una tendencia a las detecciones del LIS se dan principalmente al final de las descargas intranube. Se detectaron casi la totalidad de los intranube y un 60\% de los a tierra.
-
 \paragraph{Dowden et al. 2002} \label{Dowden et al. 2002}
 \textbf{VLF lightning location by time of group arrival (TOGA) at multiple sites}
 
 Detectar los rayos usando la metodología ATD tiene complejidades para definir el momento en que la señal del rayo llega a las diferentes antenas, y esto es más complicado cuanto más lejos se encuentra la antena de la ubicación del rayo debido a la atenuación. Una mejor metodología es usar el tiempo al que arriba la onda total que se propaga a la velocidad de grupo. La detección del TOGA se hace cuando la derivada de la fase de la onda respecto de la frecuencia cambia de signo.
 
-\paragraph{Ushio et al. 2002} \label{Ushio et al. 2002}
-\textbf{Cross-sensor comparison of the Lightning Imaging Sensor (LIS)}
-
-Comparan las mediciones del LIS con las de la NLDN y la red Lightning Detection and Ranging (LDAR) para 3 tormentas. Las tormentas se encuentran ubicadas cerca de la red LDAR por trabajar esta en el rango de las VHF. La comparación la realizan para 37 flashes detectados tanto por la LDAR como por la NLDN. Para uno de los rayos analizados, el LIS solo detecta la parte intranube del mismo y no el impacto a tierra en si asociado probablemente al espesor de la nube, también los detecta a varios km de distancia de la ubicación real. Encuentran también que la duración del flash según LIS es más corta porque este no detecta de manera correcta el inicio viendo solo el final del mismo. Comparan la ubicación del total de rayos analizados del LIS con la LDAR y encuentran que los a tierra tienen 3 veces más diferencia que los intranube (12 y 4 km respectivamente), no saben las causas.
-
 \paragraph{Betz et al. 2004} \label{Betz et al. 2004}
 \textbf{Lightning detection with 3D-discrimination of intracloud and cloud-to-ground discharges}
 
 Las redes de VLF generalmente solo detectan la posición 2D del rayo, en este trabajo proponen una metodología para ubicarlos también en altura y así poder discriminar entre rayos a tierra e intranube. La idea no es tener una ubicación precisa de la altura sino más bien tener una idea general de si fue cerca de superficie o no. En general , en el rango VLF, se usan tratamientos estadísticos para diferenciarlos. En este caso proponen explotar el uso de una red de pequeña escala para comparar el tiempo de retardo asumiendo que la emisión se dio cerca de superficie (rayo a tierra) o en altura (intranube). El funcionamiento es el siguiente, primero detectan la ubicación del rayo en 2D de manera convencional y luego para la estación más cercana al rayo comparan el retardo con el esperado para una emisión cerca de superficie, aunque operativamente meten la estimación de la altura dentro del algortimo de ubicación del rayo.
-
-\paragraph{Boeck et al. 2004} \label{Boeck et al. 2004}
-\textbf{A demonstration of the capabilities of multisatellite observations of oceanic lightning}
-
-Hacen un estudio en el que combinan las observaciones del LIS (\refname{Christian et al. 1992}) con el FORTE (\refname{Jacobson et al. 1999) para obtener mayor información sobre una misma tormenta. En un período de 4 años buscaron los casos en que sensaron la misma tormenta y encontraron 5 casos sobre el océanos pero analizan solo el caso de un MCS. En general todos los rayos detectados por el LIS también fueron detectados por el isntrumento óptico del FORTE pero este último suele ver menos. Las mediciones de los otros sensores del TRMM como el radar y los que generan imágenes satelitales en IR y MW muestran que los rayos se generan en la zona de precipitación y especialmente asociadas a la fase hielo.
 
 \paragraph{Lay et al. 2004} \label{Lay et al. 2004}
 \textbf{WWLL global lightning detection system: Regional validation study in Brazil}
@@ -136,16 +170,6 @@ Hacen un estudio teórico y experimental de los errores en las mediciones del Li
 
 Comparan la red WWLLN con la red LASA sobre la región de Florida durante la temporada de vernao de 2004. De todos los rayos detectados por la WWLLN, el 94\% se encuntran dentro de 1 ms y 100 km de un rayo detectado por LASA, y de ese 6\% restante, muchos se los puede emparejar ampliando el rango de tiempo a 200 ms, dejando solo un 1.7\% sin un par. De todos los rayos emparejados solo el 26\% son intranube. En cuanto al error en la posición, es menor a 15 o 20 km. La WWLLN tiende a detectar los rayos más intensos, y en especial, los de polaridad negativa, aunque esto puede estar afectado por la climatología de Florida donde la mayoria de los rayos son negativos. Por último evalúan si ambos detectan las mismas tormentas y si existe un proporcionalidad entre la tasa de descargas medidas por LASA y WWLLN con le objetivo de una posible asimilación de datos (via calor latente o rate de precipitación) y encuentran que la habilidad de detección de la WWLLN es buena pero existe una proporcionalidad pero no es constante, incluso puede variar con el momento del día.
 
-\paragraph{Mach et al. 2007} \label{Mach et al. 2007}
-\textbf{Performance assessment of the Optical Transient Detector and Lightning Imaging Sensor}
-
-Hacen un estudio de cómo afecta la metodología de clusterización de los datos a los resultados. El algoritmo de clusterización se basa en 3 niveles donde cada elemento de un nivel se asocia solamente con uno del nivel superior. El nivel más bajo son los \textbf{eventos} que representan la unidad básica de detección, es decir, un pixel excedió el umbral de detección en una imagen. El siguiente nivel son los \textbf{grupos}, que representan eventos que se dan en píxeles consecutivos. El último nivel son los \textbf{flashes} que representan grupos que se distancias menos de una "x" cantidad de km e "y" ms, donde "x" e "y" dependen del sensor (Para el LIS son 5.5 km y 330 ms). La primer pureba que hacen es permitir que los grupos puedan correlacionarse en el tiempo para agarrar eventos que pueden haber quedado en imágenes consecutivas. Esto claramente reduce la cantidad de grupos en el set de datos que usaron pero aumenta la cantidad de flashes porque grupos que antes se podían unir en un solo flash ahora ya no pueden. La otra opción que prueban sobre los grupos es permitir un gap de pixels entre eventos para asociarlos a un mismo grupo, esto no les genera un cambio significativo. Para el algoritmo que agrupa grupos en flashes pruebas 2 cosas, cambiar el tiempo y la escala espacial en que se correlacion grupos. Al variar el tiempo entre 100 y 1000 ms, para tiempos menores al default (330 ms) la cantidad de flashes aumenta y para tiempos mayores se reduce, esto es espcialmente claro en los casos que presentan mayores tasas de rayos. Al cambiar la escala espacial con que agrupan grupos al tomar valores de 1 km la cantidad de flashes se cuadruplicaba y nuevamente el mayor efecto se ve en las mayores tasas.
-
-\paragraph{Yoshida et al. 2009} \label{Yoshida et al. 2009}
-\textbf{A fifth-power relationship for lightning activity from Tropical Rainfall Measuring Mission satellite observations}
-
-\textcolor{red}{Williams 1985} propuso que la altura de la tormenta y la cantidad de rayos estaban relacionados como una potencia de 5, en este trabajo evalúan esta relación con datos del TRMM y proponen que podŕia ser mejor usar el espesor de la nube desde la isoterma de 0. Para estimar la altura de la tormenta usan el radar del TRMM y para los rayos el LIS. Para el estudio usan la medida de número de rayos por segundo por nube convectiva (NFSC) y lo relacionan con el espesor de la nube con la siguiente expresión $NFSC = 10^{\beta}D^{\alpha}$ donde $\beta$ y $\alpha$ los calculan bajo diferentes condiciones. El período que analizan es desde enero de 1998 hasta diciembre de 2005. Tomando todo ese período encuentran que $\alpha = 4.9 \pm 0.1$ lo que apoya la relación de una quinta potencia. Dejan fuera del análisis los espesores de nube mayores a 13km porque a partir de ahí la tasa de rayo vista por el LIS es afectada porque los rayos que se dan en niveles más bajos no logran radiar desde el tope de la nube. Evalúan distintas regiones del globo separándolas entre tierra y agua y encuentran que el $\alpha$ es aproximadamente 5 y el $\beta$ sobre el agua es 1 menos que sobre tierra indicando que hay 10 veces más rayos sobre tierra para nubes de igual espesor.
-
 \paragraph{Abarca et al. 2010} \label{Abarca et al. 2010}
 \textbf{An evaluation of the Worldwide Lightning Location Network (WWLLN) using the National Lightning Detection Network (NLDN) as ground truth}
 
@@ -160,27 +184,3 @@ Comparan a la WWLLN con la red de Canadá, la CLDN, en la zona de Ontario durant
 \textbf{Evaluation of U.S. National Lightning Detection Network performance characteristics using rocket‐triggered lightning data acquired in 2004–2009}
 
 Hacen un estudio sobre la detección de rayos inducidos por cohetes por la NLDN en Florida durante 6 años. En ese período se lograron inducir 37 rayos con 139 impactos en total, en cada uno midieron la corriente y la ubicación del mismo. De los 37 rayos la red logró detectar 34 (92\%) y de los 139 impactos detectó 105 (79\%). De los impactos que no detectó, todos tenían corrientes menores a 20 kA, pero especialmente no detectaba los de menor corriente (< a 5 kA no detectó ninguno de los 7 que hubo). En cuanto a la localización la mediana les da en 308 m con un máxima de 4.2 km. Los mayores errores los tienen en los de corrientes más bajas porque son los que detectan menos antenas. Para la corriente, ven que la red tiene a subestimar en un 10\% el valor.
-
-\paragraph{Goodman et al. 2013} \label{Goodman et al. 2013}
-\textbf{The GOES-R Geostationary Lightning Mapper (GLM)}
-
-El GLM mide el cambio en al luminosidad del tope de las nubes en el infrarrojo cercano ante un rayo con una resolución de 8 km en el nadir y 14 km en el borde del dominio en que mide. La eficiencia esperada de detección es del 86\% de todos los rayos. A los datos crudos medidos por el satélite se les hace un postprocesamiento en el que por ejemplo entra el algoritmo de clusterización usado en \refname{Mach et al. 2007}. Para cumplir el criterio de que 2 grupos son del mismo flash, la distancia entre grupos la miden como la mínima entre los eventos de cada grupo. Después destacan las ventajas que va a traer y pruebas que se van a hacer previas a la puesta operativa.
-
-\paragraph{Yang et al. 2017} \label{Yang et al. 2017}
-\textbf{Introducing the new generation of Chinese geostationary weather satellites—FengYun 4 (FY-4)}
-
-La serie de satélites FY-4 representa la segunda generación de satélites geoestacionario que cubren la región de China. Entre todas las mejoras que incluye se encuentra un sensor de rayos con especificaciones idénticas a las del GLM.
-
-\paragraph{Fierro et al. 2018} \label{Fierro et al. 2018}
-\textbf{Evolution of GLM-Observed Total Lightning in Hurricane Maria (2017) during the Period of Maximum Intensity}
-
-Evaluan cómo es la relación entre la actividad eléctrica (rate y ubicación) en un huracán y su intensificación. Para medir la actividad eléctrica usan el GLM, que aunque en ese momento estaba en fase de prueba y hubo algunos problemas con el procesamiento de la información los resultados no deberían ser fuertemente afectados, la acumularon durante 1 hora en una retícula regular de 10 km. Para ver la convección usan radares ubicados en la trayectoria y el canal 14 del ABI. Encuentran que la actividad eléctrica tiene un pico previo a la intensificación especialmente fuera del centro del huracán pero también notan que los picos en eventos y grupos se dan antes que en los flashes, entonces en el pico de flashes la cantidad de eventon y grupos que los componen es menor. Encuentrna que la mayor activiad eléctrica se daba en el cuadrante sudeste probablemente relacionado a convección que se generó en el cuadrante noroeste (en la dirección del movimiento del huracán) y "rotó" hacia ese cuadrante sumado a que con el espesor de la nubosidad se detectan principalmente los rayos intranube y no los a tierra. Por último comparan las mediciones del GLM con las de la WWLLN encontrando que esta última vio muchos menos rayos como era de esperar pero el patrón de cantidad de rayos por hora es bastante similar con leves diferencias en el tiempo en que ocurrían probablemente asociado a que la WWLLN no tiene mucha eficiencia en los rayos intranube. Hacen también una correlación entre las series horarias de los rayos de la WWLLN y los eventos-grupos-flashes del GLM encontrando una alta correlación con los flashes.
-
-\paragraph{Bruning et al. 2019} \label{Bruning et al. 2019}
-\textbf{Meteorological Imagery for the Geostationary Lightning Mapper}
-
-
-\paragraph{Rudlosky et al. 2019} \label{Rudlosky et al. 2019}
-\textbf{Initial Geostationary Lightning Mapper Observations}
-
-Hacen un análisis de los primeros 9 meses de imágenes operativas del GLM. Usa una altura estandar del tope de nube que va de 14 km en el Ecuador a 6 km en los polos. Tiene un postprocesamiento en tierra en que saca los eventos que son más probables de ser ruido. Para el análisis dividieron el dataset según la estación del año y sacaron los eventos-grupos-flashes con flag de calidad distinto de 0. Hacen estadísticas sobre la duración, extensión, energía, etc de los flashes y ven que todos los valores son mayores sobre agua que sobre tierra. Los flashes en zonas montañosas suelen ser de menor duración y extensión mientras que en las planicies, probablemente asociado a sistemas convectivos, presentan mayor duración y extensión. Describen varias fuentes de problemas como puede ser el sunglint sobre el océano y lagos en los que se ven rayos de mucha duración pero de pequeña extensión o la intrusión de radiación directa del Sol cuando el sensor del GLM queda muy cerca de esta.
