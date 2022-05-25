@@ -2,14 +2,32 @@
 ## GLM + redes ##
 #################
 
+Lojou y Cummins 2004:
+On the representation of two- and three-dimensional total lightning information
+
+Bezooijen et al. 2016:
+Image navigation and registration for the Geostationary Lightning Mapper (GLM)
+
+Peterson et al. 2017:
+The evolution and structure of extreme optical lightning flashes
+
 Jenniskens et al. 2018:
 Detection of meteoroid impacts by the Geostationary Lightning Mapper on the GOES-16 satellite
+
+Peterson et al. 2018:
+Mapping the lateral development of lightning flashes from orbit
 
 Carey et al. 2019:
 A radar investigation of storm morphology and precipitation processes during discrepancies between GOES-16 GLM and LMA observed lightning flash rates and jumps.
 
+Lyons et al. 2019:
+Documenting a 400+ km long mesoscale lightning flash in an MCS trailing stratiform region using GLM, NLDN, and OKLMA data
+
 Peterson 2019:
 Research applications for the Geostationary Lightning Mapper operational lightning flash data product
+
+Rumpf et al. 2019:
+An algorithmic approach for detecting bolides with the Geostationary Lightning Mapper.
 
 Hui et al. 2020:
 Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau
@@ -23,6 +41,8 @@ The RELAMPAGO Lightning Mapping Array: Overview and Initial Comparison with the 
 Borque et al 2020:
 Distinctive Signals in 1-min Observations of Overshooting Tops and Lightning Activity in a Severe Supercell Thunderstorm
 
+Virts y Koshak et al. 2020:
+Mitigation of Geostationary Lightning Mapper Geolocation Errors
 
 
 #######################
@@ -426,6 +446,11 @@ The role of orographic and parallax corrections on real time high resolution sat
 Fita et al 2009:
 Effects of assimilating precipitation zones derived from satellite and lightning data on numerical simulations of tropical-like Mediterranean storms
 
+Aich et al. 2018:
+Lightning: A new essential climate variable.
+
+WMO 2019:
+Lightning for climate: A study by the Task Team on Lightning Observation For Climate Applications (TT-LOCA) of the Atmospheric Observation Panel for Climate (AOPC)
 
 #############################
 # Operadores de observacion #

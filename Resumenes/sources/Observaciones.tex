@@ -78,6 +78,7 @@ Evaluan cómo es la relación entre la actividad eléctrica (rate y ubicación) 
 \paragraph{Bruning et al. 2019} \label{Bruning et al. 2019}
 \textbf{Meteorological Imagery for the Geostationary Lightning Mapper}
 
+Trabajos previos con el LIS y el OTD acumulaban rayos en función del centroide del flash pero en este trabajo proponen otra que conserva la extensión del rayo. Una forma de representar los rayos es a través de la flash extent density (FED) que cuenta la cantidad de flashes que se dan dentro de una retícula y en algunos casos dándole unidades de densidad al dividir por el área de la retícula y el tiempo de acumulación. Acumular rayos en una retícula puede generar artefactos como contar dos eventos para un mismo pixel o tener saltos que en realidad no existen. La forma que proponen de calcular las distintas variables que mencionan es hacer los cálculos en la retícula nativa del GLM y luego interpolar a una regular de 2 km que imita la del ABI para poder superponer los campos. Hacen una descripción de todo el proceso, y que es lo que está incluido en la librería \href{https://github.com/deeplycloudy/glmtools}{glmtools} de python. 
 
 \paragraph{Rudlosky et al. 2019} \label{Rudlosky et al. 2019}
 \textbf{Initial Geostationary Lightning Mapper Observations}
