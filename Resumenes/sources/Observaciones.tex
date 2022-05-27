@@ -5,6 +5,11 @@
 
 \section{General}
 
+\paragraph{Lojou y Cummins 2004} \label{Lojou y Cummins 2004}
+\textbf{On the representation of two and three-dimensional total lightning information}
+
+Definen el Flash Extent Density (FED) como para resumir la información de Total Lightning. Esta forma de representar los rayos tiene la ventaja de no ser sensible a la cantidad de fuentes detectadas por una red que componen un rayo a diferencia de contar la cantidad de fuentes en una retícula. El primer paso es conectar las fuentes como para armar la traza del rayo entonces el FED suma 1 si al menos una "rama" del rayo cruza la retícula.
+
 \paragraph{Cummins 2009} \label{Cummins 2009}
 \textbf{An Overview of Lightning Locating Systems: History, Techniques, and Data Uses, With an In-Depth Look at the U.S. NLDN}
 
@@ -78,7 +83,7 @@ Evaluan cómo es la relación entre la actividad eléctrica (rate y ubicación) 
 \paragraph{Bruning et al. 2019} \label{Bruning et al. 2019}
 \textbf{Meteorological Imagery for the Geostationary Lightning Mapper}
 
-Trabajos previos con el LIS y el OTD acumulaban rayos en función del centroide del flash pero en este trabajo proponen otra que conserva la extensión del rayo. Una forma de representar los rayos es a través de la flash extent density (FED) que cuenta la cantidad de flashes que se dan dentro de una retícula y en algunos casos dándole unidades de densidad al dividir por el área de la retícula y el tiempo de acumulación. Acumular rayos en una retícula puede generar artefactos como contar dos eventos para un mismo pixel o tener saltos que en realidad no existen. La forma que proponen de calcular las distintas variables que mencionan es hacer los cálculos en la retícula nativa del GLM y luego interpolar a una regular de 2 km que imita la del ABI para poder superponer los campos. Hacen una descripción de todo el proceso, y que es lo que está incluido en la librería \href{https://github.com/deeplycloudy/glmtools}{glmtools} de python. 
+Trabajos previos con el LIS y el OTD acumulaban rayos en función del centroide del flash pero en este trabajo proponen otra que conserva la extensión del rayo. Una forma de representar los rayos es a través de la flash extent density (FED) que cuenta la cantidad de flashes que se dan dentro de una retícula y en algunos casos dándole unidades de densidad al dividir por el área de la retícula y el tiempo de acumulación. Acumular rayos en una retícula puede generar artefactos como contar dos eventos para un mismo pixel o tener saltos que en realidad no existen. La forma que proponen de calcular las distintas variables que mencionan es hacer los cálculos en la retícula nativa del GLM y luego interpolar a una regular de 2 km que imita la del ABI para poder superponer los campos. Hacen una descripción de todo el proceso, y que es lo que está incluido en la librería \href{https://github.com/deeplycloudy/glmtools}{glmtools} de python.
 
 \paragraph{Rudlosky et al. 2019} \label{Rudlosky et al. 2019}
 \textbf{Initial Geostationary Lightning Mapper Observations}

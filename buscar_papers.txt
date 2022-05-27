@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Lojou y Cummins 2004:
-On the representation of two- and three-dimensional total lightning information
-
 Bezooijen et al. 2016:
 Image navigation and registration for the Geostationary Lightning Mapper (GLM)
 
