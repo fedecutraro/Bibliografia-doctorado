@@ -2,11 +2,8 @@
 ## GLM + redes ##
 #################
 
-Bezooijen et al. 2016:
-Image navigation and registration for the Geostationary Lightning Mapper (GLM)
-
-Peterson et al. 2017:
-The evolution and structure of extreme optical lightning flashes
+Peterson et al. 2016:
+The properties of optical lightning ﬂashes and the clouds they illuminate.
 
 Jenniskens et al. 2018:
 Detection of meteoroid impacts by the Geostationary Lightning Mapper on the GOES-16 satellite
