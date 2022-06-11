@@ -1,5 +1,5 @@
 Libros
 Papers
-Resumenes/sources/main.synctex.gz
-Resumenes/sources/Build
+Resumenes/sources/Build/*
+!Resumenes/sources/Build/main.pdf
 *.swp
