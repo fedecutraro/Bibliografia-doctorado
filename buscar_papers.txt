@@ -2,9 +2,6 @@
 ## GLM + redes ##
 #################
 
-Peterson et al. 2016:
-The properties of optical lightning ﬂashes and the clouds they illuminate.
-
 Jenniskens et al. 2018:
 Detection of meteoroid impacts by the Geostationary Lightning Mapper on the GOES-16 satellite
 
