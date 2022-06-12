@@ -11,9 +11,6 @@ Mapping the lateral development of lightning flashes from orbit
 Carey et al. 2019:
 A radar investigation of storm morphology and precipitation processes during discrepancies between GOES-16 GLM and LMA observed lightning flash rates and jumps.
 
-Lyons et al. 2019:
-Documenting a 400+ km long mesoscale lightning flash in an MCS trailing stratiform region using GLM, NLDN, and OKLMA data
-
 Peterson 2019:
 Research applications for the Geostationary Lightning Mapper operational lightning flash data product
 
@@ -26,12 +23,14 @@ Characteristics of lightning signals over the Tibetan Plateau and the capability
 Lang et al 2020:
 The RELAMPAGO Lightning Mapping Array: Overview and Initial Comparison with the Geostationary Lightning Mapper
 
+Bateman y Match 2020:
+Preliminary detection efficiency and false alarm rate assessment of the Geostationary Lightning Mapper on the GOES-16 satellite
+
 Borque et al 2020:
 Distinctive Signals in 1-min Observations of Overshooting Tops and Lightning Activity in a Severe Supercell Thunderstorm
 
-Virts y Koshak et al. 2020:
-Mitigation of Geostationary Lightning Mapper Geolocation Errors
-
+Murphy y Said 2020:
+Comparisons of lightning rates and properties from the U.S. National Lightning Detection Network (NLDN) and GLD360 with GOES-16 geostationary lightning mapper and advanced baseline imager data
 
 #######################
 # Latent Heat Nudging #
