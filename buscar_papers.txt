@@ -23,9 +23,6 @@ An algorithmic approach for detecting bolides with the Geostationary Lightning M
 Hui et al. 2020:
 Characteristics of lightning signals over the Tibetan Plateau and the capability of FY-4A LMI lightning detection in the Plateau
 
-Mach 2020:
-Geostationary lightning mapper clustering algorithm stability
-
 Lang et al 2020:
 The RELAMPAGO Lightning Mapping Array: Overview and Initial Comparison with the Geostationary Lightning Mapper
 
