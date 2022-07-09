@@ -44,6 +44,12 @@ Assimilation of radar derived rain rates into the convective-scale model COSMO-D
 # Electrificación en los modelos #
 ##################################
 
+Heldson et al. 1992:
+An intracloud lightning parameterization scheme for a storm electrification model
+
+MacGorman et al. 2001:
+A lightning parameterization for numerical cloud models
+
 McCaul et al 2009:
 Forecasting lightning threat using cloud-resolving model simulations.
 
@@ -179,14 +185,14 @@ Boccippio et al. 2001:
 Combined satellite- and surface-based estimation of the intracloud–cloud-to-ground lightning ratio over
 the continental United States
 
+Marshall et al. 2001:
+Electric field magnitudes and lightning initiation in thunderstorms.
+
 Ushio et al. 2001:
 A survey of thunderstorm flash rates compared to cloud top height using TRMM satellite data
 
 Williams 2001:
 The electriﬁcation of severe storms. In: Severe Convective Storms
-
-Mansell el al 2002:
-Simulated three-dimensional branched lightning in a numerical thunderstorm model.
 
 Qie et al 2002:
 Some features of stepped and dartstepped leaders near the ground in natural negative cloud-to-ground lightning discharges
@@ -211,9 +217,6 @@ Origins of positive cloud-to-ground lightning ﬂashes in the stratiform region 
 
 Lin et al 2005:
 The spatial and temporal distribution for lightning of various clouds system.
-
-Mansell et al 2005:
-Charge structure and lightning sensitivity in a simulated multicell thunderstorm.
 
 Petersen et al 2005:
 TRMM observations of the global relationship between ice water content and lightning.
