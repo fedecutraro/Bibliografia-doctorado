@@ -2,4 +2,5 @@ Libros
 Papers
 Resumenes/sources/Build/*
 !Resumenes/sources/Build/main.pdf
+Bibliografia.code-workspace
 *.swp
