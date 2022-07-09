@@ -44,9 +44,6 @@ Assimilation of radar derived rain rates into the convective-scale model COSMO-D
 # Electrificación en los modelos #
 ##################################
 
-Price y Rind 1992:
-A simple lightning parameterization for calculating the global lightning distribution.
-
 McCaul et al 2009:
 Forecasting lightning threat using cloud-resolving model simulations.
 
@@ -106,6 +103,9 @@ Application of lightning observations of TRMM satellite to the mesoscale numeric
 ## Electrificacion ##
 #####################
 
+Vonnegut 1963:
+Some facts and speculation concerning the origin and role of thunderstorm electricity
+
 Takahashi 1978:
 Riming electrification as a charge generation mechanism in thunderstorms.
 
@@ -114,6 +114,9 @@ The electrification of thunderstorms
 
 Thomason y Krider 1982:
 The effects of clouds on the light produced by lightning
+
+Lhermitte y Williams 1983:
+Cloud electrification
 
 Williams 1985:
 Large-scale charge separation in thunderclouds.
