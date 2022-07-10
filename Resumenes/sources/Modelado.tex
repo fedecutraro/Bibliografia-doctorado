@@ -1,3 +1,5 @@
+% !TEX root = ./main.tex
+
 \chapter{Modelado}
 
 \section{Rayos}
@@ -11,6 +13,11 @@ Partiendo de la ecuación del voltaje asociado a una carga puntual llegan a que 
 \href{https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2000JD000244}{Simulated three-dimensional branched lightning in a numerical thunderstorm model}
 
 Realizan una parametrización que puede hacer una representación tridimensional de los rayos en un modelo meteorológico. A partir de modelos no meteorológicos de descargas extienden la idea a una tormenta. Tienen que hacer muchas suposiciones, como que el ancho del rayo es igual al tamaño de la retícula y que si un rayo llega se propaga lo suficiéntemente cerca de la superficie (1.75 km AGL) lo consideran que fue a tierra. Realizan una prueba para un caso simulado a partir de un sondeo y hodógrafa típica de una supercelda en el que tienen que parametrizar los procesos de la generación de las cargas eléctricas en la tormenta. Muestran como ejemplo 2 rayos intranube y 2 rayos a tierra, uno positivo y otro negativo. Encuentran que los rayos se inician principalmente cerca de la zona de límite entre las cargas positivas y negativas (máximo potencial). Además destacan varias similitudes entre los resultados obtenidos y los observados en la naturaleza
+
+\paragraph{Mansell et al. 2005} \label{Mansell et al. 2005}
+\href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2004JD005287}{\textbf{Charge structure and lightning sensitivity in a simulated multicell thunderstorm}}
+
+Van a estudiar la sensibilidad de un modelo que resuelve explícitamente la electrificación de tormentas a la utilización de 5 parametrizaciones distintas de los procesos no inductivos de carga que se basan en estudios que llegaron a conclusiones diferentes (describen cada una), a la utilización o no de un esquema para los procesos inductivos y a la mínima concentración de cristales de hielo. Para parametrizar los rayos usan \nameref{Mansell et al. 2002}. La tormenta simulada la inician a partir de generar perturbaciones de temperatura en un entorno asociado a convección multicelular. En líneas generales encuentran que apagar los procesos inductivos generan más rayos que si estos se encuentran con intensidad moderada pero si se utilizan con mucha intensidad la cantidad de rayos es mucho menor, además de que la cantidad de rayos aumenta al aumentar el mínimo permitido de concentración de cristales de hielo.
 
 \paragraph{Fierro y Reisner 2011} \label{Fierro y Reisner 2011}
 \href{https://journals.ametsoc.org/view/journals/atsc/68/3/2010jas3659.1.xml}{\textbf{High-Resolution Simulation of the Electrification and Lightning of Hurricane Rita during the Period of Rapid Intensification}}

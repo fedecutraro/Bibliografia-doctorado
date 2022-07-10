@@ -154,6 +154,9 @@ Cloud-to-Ground Lightning in a Tornadic Storm on 8 May 1986
 Saunders et al 1991:
 The effect of liquid water on thunderstorm charging
 
+Brooks y Saunders 1994:
+An experimental investigation of the inductive mechanism of thunderstorms electrification.
+
 Zipser 1994:
 Deep cumulonimbus cloud systems in the Tropics with and without lightning.
 
@@ -180,6 +183,9 @@ Lightning flash rate and type in convective storms
 
 Williams et al. 1999:
 The behavior of total lightning activity in severe Florida thunderstorms
+
+Krehbiel et al. 2000:
+Inverted polarity lightning in STEPS
 
 Boccippio et al. 2001:
 Combined satellite- and surface-based estimation of the intracloud–cloud-to-ground lightning ratio over
