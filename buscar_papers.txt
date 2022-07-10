@@ -269,6 +269,9 @@ Radar and lightning observations of normal and inverted polarity multicellular s
 Cohen 2008:
 Flash rate, electrical, microphysical, and kinematic relationships across a simulated storm spectrum
 
+Coleman et al. 2018:
+Horizontal lightning propagation, preliminary breakdown, and electric potential in New Mexico thunderstorms
+
 MacGorman er al. 2008:
 The Thunderstorm Electrification and Lightning Experiment.
 
@@ -292,9 +295,6 @@ Thunderstorms lightning and climate change
 
 Emersic y Saunders 2010:
 Further laboratory investigations into the relative diﬀusional growth rate theory of thunderstorm electriﬁcation
-
-Mansell et al. 2010:
-Simulated electrification of a small thunderstorm with two-moment bulk microphysics.
 
 Yang et al. 2010:
 Investigating the potential of using radar echo reﬂectivity to nowcast cloud-to-ground lightning initiation over southern Ontario.
