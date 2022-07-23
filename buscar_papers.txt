@@ -50,6 +50,12 @@ An intracloud lightning parameterization scheme for a storm electrification mode
 MacGorman et al. 2001:
 A lightning parameterization for numerical cloud models
 
+Bright et al. 2004:
+A physically based parameter for lightning prediction and its calibration in ensemble forecasts.
+
+Shafer y Fuelberg 2008:
+A perfect prognosis scheme for forecasting warm season lightning over Florida
+
 McCaul et al 2009:
 Forecasting lightning threat using cloud-resolving model simulations.
 
@@ -67,9 +73,6 @@ Predicting cloud-to-ground and intracloud lightning in weather forecast models.
 
 Yair et al 2012:
 Predicting the potential for lightning activity in Mediterranean storms based on the Weather Research and Forecasting (WRF) model dynamic and microphysical fields.
-
-*Fierro et al 2013:
-The implementation of an explicit charging and discharge lightning scheme within the WRF-ARW Model: Benchmark simulations of a continental squall line, a tropical cyclone, anda winter storm
 
 Carey et al. 2014
 Kinematic and microphysical control of lightning in multicell convection over Alabama during DC3
@@ -97,6 +100,9 @@ Sensitivities of the WRF lightning forecasting algorithm to parameterized microp
 
 Sun et al. 2021:
 Aerosol Effects on Electrification and Lightning Discharges in a Multicell Thunderstorm Simulated by the WRF-ELEC Model
+
+Federico et al. 2022:
+A Year-Long Total Lightning Forecast over Italy with a Dynamic Lightning Scheme and WRF
 
 ##########################
 ## Asimilacion de rayos ##
