@@ -47,11 +47,20 @@ Assimilation of radar derived rain rates into the convective-scale model COSMO-D
 Heldson et al. 1992:
 An intracloud lightning parameterization scheme for a storm electrification model
 
+Ziegler y MacGorman et al 1994:
+Observed lightning morphology relative to modeled space charge and electric field distributions in a tornadic storm
+
 MacGorman et al. 2001:
 A lightning parameterization for numerical cloud models
 
+Mazany et al. 2002:
+A lightning prediction index that utilizes GPS integrated precipitable water vapor.
+
 Bright et al. 2004:
 A physically based parameter for lightning prediction and its calibration in ensemble forecasts.
+
+Burrows et al. 2005:
+Warm season lightning probability prediction for Canada and the northern United States
 
 Shafer y Fuelberg 2008:
 A perfect prognosis scheme for forecasting warm season lightning over Florida
