@@ -62,6 +62,9 @@ A physically based parameter for lightning prediction and its calibration in ens
 Burrows et al. 2005:
 Warm season lightning probability prediction for Canada and the northern United States
 
+MacGorman et al. 2008:
+Flash rate, electrical, microphysical, and dynamical relationships across a simulated storm spectrum
+
 Shafer y Fuelberg 2008:
 A perfect prognosis scheme for forecasting warm season lightning over Florida
 
@@ -76,12 +79,6 @@ Modeling the Flash Rate of Thunderstorms. Part II: Implementation.
 
 McCaul et al 2012:
 Optimizing the lightning forecast algorithm within the Weather Research and Forecasting Model
-
-*Lynn et al 2012:
-Predicting cloud-to-ground and intracloud lightning in weather forecast models.
-
-Yair et al 2012:
-Predicting the potential for lightning activity in Mediterranean storms based on the Weather Research and Forecasting (WRF) model dynamic and microphysical fields.
 
 Carey et al. 2014
 Kinematic and microphysical control of lightning in multicell convection over Alabama during DC3
@@ -456,6 +453,9 @@ The role of orographic and parallax corrections on real time high resolution sat
 
 Fita et al 2009:
 Effects of assimilating precipitation zones derived from satellite and lightning data on numerical simulations of tropical-like Mediterranean storms
+
+Ashley y Gilson 2009:
+A reassessment of U.S. lightning mortality
 
 Aich et al. 2018:
 Lightning: A new essential climate variable.
